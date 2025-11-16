@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virat Kohli — A Classic Tribute</title>
+  <meta name="description" content="A beautiful, classic tribute page for Virat Kohli showcasing trophies, achievements and match awards." />
+  <style>
+    /* Classic, elegant styling */
+    :root{
+      --bg:#f7f5f0;
+      --paper:#fffdf8;
+      --accent:#b8860b; /* goldenrod */
+      --muted:#6b6b6b;
+      --primary:#0b2545;
+      --glass: rgba(11,37,69,0.06);
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#efece7);color:var(--primary)}
+    header{background:var(--paper);backdrop-filter: blur(4px);box-shadow:0 6px 20px rgba(11,37,69,0.06);padding:28px 40px;border-bottom:4px solid rgba(184,134,11,0.08)}
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+    .hero{display:flex;gap:28px;align-items:center}
+    .hero img{width:320px;height:auto;border-radius:12px;box-shadow:0 20px 40px rgba(11,37,69,0.12);border:6px solid var(--paper)}
+    h1{font-size:44px;margin:0 0 6px;color:var(--primary);letter-spacing:0.5px}
+    h2{margin:6px 0;color:var(--muted);font-weight:normal}
+    nav{margin-top:12px}
+    nav a{margin-right:14px;color:var(--accent);text-decoration:none;font-weight:700}
+    .lead{font-size:16px;color:var(--muted);line-height:1.6}
+
+    /* Sections */
+    section{margin:28px 0;padding:22px;background:var(--paper);border-radius:12px;box-shadow:0 10px 30px rgba(11,37,69,0.03)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+    .badges{display:flex;gap:8px;flex-wrap:wrap}
+    .badge{background:var(--glass);padding:8px 12px;border-radius:999px;font-weight:700}
+
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:12px 10px;border-bottom:1px solid #efe8df;text-align:left}
+    th{background:linear-gradient(90deg,rgba(184,134,11,0.06),transparent);font-weight:800}
+
+    footer{padding:18px 40px;text-align:center;color:var(--muted);font-size:14px}
+    .trophy{font-size:22px}
+
+    /* Fancy list styles */
+    ol.fancy{counter-reset:step;list-style:none;padding-left:0}
+    ol.fancy li{position:relative;padding-left:56px;margin:14px 0}
+    ol.fancy li:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--accent);color:white;display:flex;align-items:center;justify-content:center;font-weight:900}
+
+    /* Responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.hero{flex-direction:column}.hero img{width:100%;max-width:420px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="hero">
+        <div style="flex:1">
+          <h1>Virat Kohli <span style="color:var(--accent);">🏏</span></h1>
+          <h2>Classic Tribute — Determination, Elegance &amp; Mastery</h2>
+          <p class="lead">This page demonstrates the use of many HTML elements while honoring the career highlights and honours of Virat Kohli. It includes semantic sections, tables, lists, forms, media placeholders, and special characters like &amp;, &copy;, &euro;, &ndash;, &#9733; and more.</p>
+          <nav>
+            <a href="#trophies">Trophies</a>
+            <a href="#awards">Awards</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <figure>
+          <!-- replace the src with your local or hosted image -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Virat_Kohli_2018.jpg" alt="Virat Kohli portrait" />
+          <figcaption style="text-align:center;color:var(--muted);font-size:13px;margin-top:8px">Virat Kohli — portrait (replace image as needed)</figcaption>
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="trophies" aria-labelledby="trophies-heading">
+      <h2 id="trophies-heading">International Trophies &amp; Major Team Honours <span class="trophy">🏆</span></h2>
+      <p class="lead">Major international trophies and honours Virat Kohli has been part of (team or captaincy roles). This list focuses on well-known international wins and tournament highlights.</p>
+
+      <table aria-describedby="trophy-note">
+        <caption style="caption-side:bottom;text-align:left;color:var(--muted);font-size:13px" id="trophy-note">Note: replace or expand this table if you want the most up-to-date list.</caption>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Tournament</th>
+            <th>Role</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2008</td>
+            <td>ICC U-19 Cricket World Cup</td>
+            <td>Captain</td>
+            <td>Led India to U-19 World Cup victory &#9733;</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>ICC Cricket World Cup</td>
+            <td>Team Member</td>
+            <td>Part of the World Cup winning squad.</td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>ICC Champions Trophy</td>
+            <td>Team Member</td>
+            <td>Member of the Champions Trophy winning squad.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <details>
+        <summary style="cursor:pointer;font-weight:800;margin-top:12px">More history &amp; context</summary>
+        <p class="lead">Virat's journey from U-19 captain to senior team stalwart includes numerous series wins across formats and multiple bilateral trophies. Use the 'Gallery' section for photographs and the 'Awards' area for individual honours like Player of the Match / Series.</p>
+      </details>
+    </section>
+
+    <section id="awards" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Individual Awards &amp; Records</h2>
+      <div class="grid">
+        <article>
+          <p class="lead">Here are selected individual achievements — frequent Player of the Match recognitions, Player of the Series accolades, and many records across Test, ODI &amp; T20 formats. The numbers evolve as the player's career continues.</p>
+
+          <ol class="fancy">
+            <li><strong>Player of the Match (ODI):</strong> Numerous awards across his ODI career, reflecting match-winning innings.</li>
+            <li><strong>Player of the Series (ODI):</strong> Multiple series-winning performances earning Kohli series awards.</li>
+            <li><strong>Fastest to several ODI milestones:</strong> Centuries &amp; high-impact scores across chases and run-chases.</li>
+          </ol>
+
+          <blockquote cite="https://en.wikipedia.org/wiki/Virat_Kohli" style="margin-top:12px;padding:12px 18px;background:var(--glass);border-left:4px solid var(--accent);">
+            "A modern great — consistent across formats and environments." — a summarised view from multiple cricket records.
+          </blockquote>
+
+          <pre><code>&lt;!-- Example of HTML snippet --&gt;
+&lt;h1&gt;Virat Kohli&lt;/h1&gt;
+&lt;p&gt;A classic tribute page.&lt;/p&gt;
+</code></pre>
+        </article>
+
+        <aside style="padding:14px;background:#fff;border-radius:8px">
+          <h3 style="margin-top:0">Quick stats</h3>
+          <ul>
+            <li>International span: 2008 &ndash; present</li>
+            <li>Formats: Test, ODI, T20I</li>
+            <li>Notable: Hundreds of Player of the Match / Series awards</li>
+          </ul>
+
+          <form id="newsletter" action="#" method="post" aria-label="Subscribe form">
+            <label for="email">Get updates &amp; photos:</label><br>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required style="margin-top:8px;padding:10px;width:100%;border-radius:6px;border:1px solid #e9e1d8">
+            <button type="submit" style="margin-top:10px;padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:800;cursor:pointer">Subscribe</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery &amp; Media</h2>
+      <p class="lead">A few media placeholders. Replace the <code>src</code> attributes with your own files or hosted images.</p>
+
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Virat_Kohli_Brisbane_2016.jpg" alt="Kohli batting" style="max-width:100%;border-radius:8px;box-shadow:0 10px 30px rgba(11,37,69,0.06)">
+        <figcaption style="color:var(--muted);font-size:13px">Kohli in action — replace image if desired.</figcaption>
+      </figure>
+
+      <p style="margin-top:14px">Multimedia examples:</p>
+      <audio controls>
+        <source src="#" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="640" style="display:block;margin-top:12px">
+        <source src="#" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <p style="margin-top:12px">Embedded content (example):</p>
+      <iframe title="sample" src="about:blank" style="width:100%;height:300px;border:1px solid #efe8df;border-radius:8px">Sorry, your browser does not support iframes.</iframe>
+    </section>
+
+    <section id="extra">
+      <h2>Elements, tags &amp; special characters showcase</h2>
+      <p>Below is a quick showcase of many HTML elements used in a single page: <em>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;figure&gt;, &lt;figcaption&gt;, &lt;table&gt;, &lt;form&gt;, &lt;details&gt;, &lt;summary&gt;, &lt;audio&gt;, &lt;video&gt;, &lt;iframe&gt;, &lt;blockquote&gt;, &lt;code&gt;, &lt;pre&gt;, &lt;canvas&gt; (placeholder)</em>.</p>
+      <p>Special characters examples: &amp;, &lt;, &gt;, &copy;, &reg;, &euro;, &pound;, &ndash;, &mdash;, &#9733;, &#x1F3C6;.</p>
+
+      <canvas id="canvas" width="600" height="80" style="border:1px dashed #efe8df;background:transparent;display:block;margin-top:12px">Fallback canvas text</canvas>
+      <script>
+        // small canvas demo
+        (function(){
+          try{
+            var c=document.getElementById('canvas');
+            var ctx=c.getContext('2d');
+            ctx.font='24px Georgia';
+            ctx.fillStyle='#0b2545';
+            ctx.fillText('Virat Kohli — Classic Tribute ✦',10,40);
+          }catch(e){console.warn('canvas not supported')}
+        })();
+      </script>
+    </section>
+
+    <section id="contact">
+      <h2>Contact / Credits</h2>
+      <p>If you'd like to adapt this page, copy the HTML and replace images and data with the most current information. Credit photos as required by their licences.</p>
+
+      <address>
+        Created by: <strong>Your Name</strong> &mdash; email: <a href="mailto:you@example.com">you@example.com</a>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Classic Kohli Tribute. All rights reserved. Designed with ❤️ and HTML.</p>
+    </div>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

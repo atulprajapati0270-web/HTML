@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Virat Kohli — A Classic Tribute</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    /* Classic, elegant styling */
+    :root{
+      --bg: #fbfaf6;
+      --card:#ffffff;
+      --muted:#6b6b6b;
+      --accent:#b88a3d;
+      --accent-2:#284b63;
+      --maxw:1100px;
+      --shadow: 0 6px 18px rgba(36,36,36,0.08);
+    }
+    *{box-sizing:border-box}
+    body{font-family: 'Merriweather', serif; background:linear-gradient(180deg,var(--bg),#f4f2ee); color:#222; margin:0; padding:32px; -webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw); margin:0 auto}
+
+    header.site-header{display:flex;align-items:center;gap:24px;padding:18px 24px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)}
+    .logo{display:flex;align-items:center;gap:14px}
+    .crest{width:72px;height:72px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1.title{font-family:'Roboto Slab', serif;margin:0;font-size:34px}
+    p.tag{margin:0;color:var(--muted)}
+
+    nav.topnav{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+    nav.topnav a{padding:8px 12px;border-radius:8px;text-decoration:none;background:#fffefc;border:1px solid #eee;color:#333}
+
+    main{display:grid;grid-template-columns:2fr 1fr;gap:22px;margin-top:22px}
+    article.card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    aside.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow);height:min-content}
+
+    .hero{display:flex;gap:18px;align-items:center}
+    .hero figure{margin:0}
+    .hero img{width:240px;height:240px;object-fit:cover;border-radius:10px;border:6px solid #fff;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+    .meta small{color:var(--muted)}
+
+    .badges{display:flex;gap:8px;margin-top:8px}
+    .badge{background:#fff9f2;padding:6px 10px;border-radius:999px;border:1px solid #f0e2c8;color:#7a5b2b;font-weight:600}
+
+    table.stats{width:100%;border-collapse:collapse;margin-top:16px}
+    table.stats th, table.stats td{padding:8px;border-bottom:1px dashed #eee;text-align:left}
+    table.stats th{background:#fbf8f2}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:110px;object-fit:cover;border-radius:6px}
+
+    blockquote{padding:12px 16px;border-left:4px solid var(--accent);background:#fffdf9;border-radius:6px;margin:12px 0}
+
+    footer.site-footer{margin-top:28px;padding:18px;text-align:center;color:var(--muted)}
+
+    /* Tiny responsive */
+    @media (max-width:900px){main{grid-template-columns:1fr} .hero img{width:180px;height:180px}}
+
+    /* form */
+    form input, form textarea, form button, form select{width:100%;padding:10px;margin-top:8px;border-radius:6px;border:1px solid #e6e6e6}
+    form button{background:var(--accent);color:white;border:none;cursor:pointer}
+
+    /* subtle typographic ornament */
+    .ornament{font-size:18px;color:var(--accent);letter-spacing:4px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="site-header">
+      <div class="logo">
+        <div class="crest" aria-hidden>VK</div>
+        <div>
+          <h1 class="title">Virat Kohli — A Classic Tribute</h1>
+          <p class="tag">Cricketer • Leader • Record-maker &nbsp; &#9733; &#169;</p>
+        </div>
+      </div>
+      <nav class="topnav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#stats">Stats</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="card" id="about">
+        <section class="hero">
+          <figure>
+            <!-- Placeholder image: replace src with local or hosted image -->
+            <img src="https://images.unsplash.com/photo-1531259683007-016a6a6b04f8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Portrait of Virat Kohli" />
+            <figcaption style="font-size:12px;color:var(--muted);margin-top:6px">Virat Kohli — on the pitch. &amp; off it.</figcaption>
+          </figure>
+          <div class="meta">
+            <p><strong>Virat Kohli</strong> (विराट कोहली) is a modern great of international cricket — known for his technique, intensity, and consistency. He has set multiple records in Tests, ODIs &amp; T20s, captained India, and inspired a generation. &nbsp; &#x1F3C6; &#x1F3BE;</p>
+            <div class="badges">
+              <span class="badge">Right-hand bat</span>
+              <span class="badge">Former India Captain</span>
+              <span class="badge">Runs &gt; Records</span>
+            </div>
+
+            <p style="margin-top:10px;color:var(--muted)">This page shows an example of many HTML elements: headings, lists, table, forms, blockquote, figure, picture, canvas (declared), svg, code samples, special characters like &amp;, &lt;, &gt;, &copy;, &reg;, non-breaking spaces &nbsp;, and more.</p>
+          </div>
+        </section>
+
+        <hr />
+
+        <section id="achievements">
+          <h2>Major achievements &amp; honours</h2>
+          <ul>
+            <li>ICC Awards &mdash; multiple times in various formats.</li>
+            <li>Leading run-scorer for India across formats in numerous series.</li>
+            <li>Fastest to many ODI milestones (50, 100, 200, 300)... <em>(records evolve)</em>.</li>
+          </ul>
+
+          <h3>Timeline (selected)</h3>
+          <dl>
+            <dt>2008</dt>
+            <dd>International debut for India in ODI cricket.</dd>
+            <dt>2011</dt>
+            <dd>Part of the ICC Cricket World Cup winning squad.</dd>
+            <dt>2013–2018</dt>
+            <dd>Reached top of world rankings in multiple formats.</dd>
+          </dl>
+
+          <blockquote cite="https://www.icc-cricket.com/">"When you have a passion and discipline, there are no shortcuts." &mdash; Virat Kohli</blockquote>
+
+          <h3>Short code sample (inline &amp; preformatted)</h3>
+          <p>Code element: <code>&lt;strong&gt;Bold text&lt;/strong&gt;</code></p>
+          <pre><code>&lt;!-- Example: a simple card --&gt;
+&lt;div class="card"&gt;
+  &lt;h2&gt;Title&lt;/h2&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h3>Structured achievements</h3>
+          <table class="stats" summary="Virat Kohli selected career stats">
+            <thead>
+              <tr><th>Format</th><th>Matches</th><th>Runs</th><th>Highest</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Test</td><td>100+</td><td>8000+</td><td>254</td></tr>
+              <tr><td>ODI</td><td>250+</td><td>12000+</td><td>183</td></tr>
+              <tr><td>T20I</td><td>100+</td><td>3500+</td><td>122*</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Achievements as lists (ordered)</h3>
+          <ol>
+            <li>Consistent top-order run scoring.</li>
+            <li>Captaincy across formats.</li>
+            <li>Fitness &amp; commitment to the game.</li>
+          </ol>
+        </section>
+
+        <section id="gallery">
+          <h2>Gallery</h2>
+          <p class="ornament">&#8212; Memorable moments &#8212;</p>
+          <div class="gallery" aria-hidden>
+            <img src="https://source.unsplash.com/featured/?cricket" alt="Cricket action" />
+            <img src="https://source.unsplash.com/featured/?stadium" alt="Stadium" />
+            <img src="https://source.unsplash.com/featured/?trophy" alt="Trophy" />
+          </div>
+
+          <h3>Multimedia</h3>
+          <p>Video highlight (YouTube embed). If this doesn't load, replace src with the actual video URL.</p>
+          <div style="position:relative;padding-top:56.25%;">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Virat Kohli highlights" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen></iframe>
+          </div>
+
+          <p>Audio sample (podcast highlight):</p>
+          <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </section>
+
+      </article>
+
+      <aside class="card">
+        <h3>Quick facts</h3>
+        <ul>
+          <li><strong>Born:</strong> 5 November (year)</li>
+          <li><strong>Role:</strong> Batsman</li>
+          <li><strong>Batting style:</strong> Right-hand bat</li>
+        </ul>
+
+        <hr />
+
+        <h4>Notable honours</h4>
+        <p>&#169; Multiple national awards, including <em>Padma</em> &amp; sports honours in India. &nbsp; &reg;</p>
+
+        <h4>Mini gallery (SVG trophies)</h4>
+        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <path d="M7 3h10v2a5 5 0 0 1-5 5 5 5 0 0 1-5-5V3z" fill="#b88a3d"/>
+            <path d="M5 7h14v2a7 7 0 0 1-7 7 7 7 0 0 1-7-7V7z" fill="#ffd" opacity="0.2"/>
+          </svg>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <circle cx="12" cy="8" r="4" fill="#284b63"/>
+            <rect x="6" y="14" width="12" height="6" rx="2" fill="#fff" stroke="#284b63"/>
+          </svg>
+        </div>
+
+        <hr />
+
+        <h4>Subscribe</h4>
+        <form id="subscribe" aria-label="Subscribe form">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <label for="interest">Interest</label>
+          <select id="interest">
+            <option>All updates</option>
+            <option>Match-by-match</option>
+            <option>Career milestones</option>
+          </select>
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <hr />
+
+        <details>
+          <summary>Fun facts &#x1F4A1;</summary>
+          <p>Virat is known for his discipline, diet, and fitness routine. He emphasizes consistency and mental resilience. &nbsp; &#128170;</p>
+        </details>
+
+      </aside>
+
+    </main>
+
+    <section class="card" style="margin-top:18px">
+      <h2 id="contact">Contact &amp; Feedback</h2>
+      <p>If you want this page customized (Hindi content, different color palette, more images or live stats), edit the HTML below or ask me to modify it.</p>
+
+      <form action="#" method="post" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" />
+        </div>
+        <div>
+          <label for="email2">Email</label>
+          <input id="email2" name="email" type="email" placeholder="you@example.com" />
+        </div>
+        <div style="grid-column:1/-1">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Say something about Virat or this page..."></textarea>
+        </div>
+        <div style="grid-column:1/-1">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+
+      <p style="margin-top:12px;color:var(--muted)">Special characters used on this page: &amp; &lt; &gt; &copy; &reg; &nbsp; &#9733; &#8212; &#x1F3C6;</p>
+
+    </section>
+
+    <footer class="site-footer">
+      <p>Made with care — a classic tribute to Virat Kohli. &nbsp; &mdash; &nbsp; &#x1F3C6;</p>
+      <p style="font-size:12px;color:#9a9a9a">Tip: Save this file as <code>virat-classic.html</code> and open it in your browser or use Live Server in VS Code.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Small JS to handle forms gracefully (no backend here)
+    document.getElementById('subscribe').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thanks for subscribing — this is a demo form.');
+    });
+    document.querySelector('form[action="#"]').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Message received (demo). Thank you!');
+    });
+  </script>
+</body>
+</html>
