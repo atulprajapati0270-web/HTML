@@ -20,7 +20,7 @@
 </body>
 </html>
  -->
-  <html>
+  <!-- <html>
     <head>
         <title>Student Information and lists</title>
 
@@ -64,4 +64,204 @@
           </ol>
 
     </body>
-  </html>
+  </html> --><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atul | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #020617;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid cyan;
+}
+
+.hero h1 {
+    margin: 15px 0;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.card {
+    background: #1e293b;
+    margin: 15px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* PROJECT GRID */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background: #1e293b;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+/* BUTTON */
+button {
+    padding: 10px 15px;
+    background: cyan;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+}
+
+/* MOBILE */
+@media(max-width: 600px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="https://via.placeholder.com/140">
+    <h1>Atul Prajapati 👋</h1>
+    <p>Web Developer | Student</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p id="aboutText">I love coding and building websites.</p>
+        <button onclick="more()">Read More</button>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript</p>
+        <p>C++, C, Linux</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+
+        <div class="project">
+            <h3>Calculator</h3>
+            <p>Simple JS Calculator</p>
+        </div>
+
+        <div class="project">
+            <h3>Login Page</h3>
+            <p>Form validation project</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio</h3>
+            <p>This website</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: atulprajapati070@gmail.com</p>
+        <p>Phone: 8980253071</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Atul | Made with ❤️(GPT)</p>
+</footer>
+
+<script>
+function more() {
+    document.getElementById("aboutText").innerHTML =
+    "I enjoy coding 💻, learning Linux 🐧, and building real-world projects 🚀";
+}
+</script>
+
+</body>
+</html>
